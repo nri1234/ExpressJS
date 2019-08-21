@@ -29,8 +29,7 @@ app.post("/updateNote/:note", function(req, res) {
     });
 });
 
-
 app.listen(3000);
-app.use(function (req, res, next) {
-    res.status(404).send('Sorry we cannot find what you want!')
+app.use(function(req, res, next) {
+    res.status(404).send("Sorry we cannot find what you want!");
 });
